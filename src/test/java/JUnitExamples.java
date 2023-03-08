@@ -9,7 +9,7 @@ public class JUnitExamples {
 
     @BeforeEach
     void beforeEach() {
-        System.out.println(" Here is beforeEach()");
+        System.out.println("  Here is beforeEach()");
     }
 
     @AfterAll
@@ -25,11 +25,11 @@ public class JUnitExamples {
 
     @Test
     void firstTest() {
-        System.out.println("  Here is firstTest()");
+        System.out.println("    Here is firstTest()");
     }
 
     @Test
     void secondTest() {
-        System.out.println("   Here is secondTest()");
+        System.out.println("    Here is secondTest()");
     }
 }
