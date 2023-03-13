@@ -1,6 +1,10 @@
+package tests;
+
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import java.beans.PropertyEditor;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
@@ -24,6 +28,7 @@ public class TextBoxTests {
 
         $("#output").shouldHave(text("Ivan Petrov"), text("IvanPetrov@12mail.ru"),
                 text("RU, MSK"), text("RU, some adress"));
+
 
 
     }
