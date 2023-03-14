@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class RegistrationTests {
 
     @BeforeAll
-    static void  beforeAll() {
+    static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
 
@@ -48,9 +48,9 @@ public class RegistrationTests {
 
         $(".modal-dialog").should(appear);
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Ivan"), text("Petrov"), text("IvanPetrov@12mail.ru"), text("6598955622"));
-
-
+        $(".table-responsive").shouldHave(text("Ivan"), text("Petrov"), text("IvanPetrov@12mail.ru"),
+                text("Male"), text("6598955622"), text("27 December,2000"), text("Arts"),
+                text("Reading"), text("Cat.jpeg"), text("Address"), text("Haryana"), text("Karnal"));
     }
 }
 
